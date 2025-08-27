@@ -1,8 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Search, Loader2 } from "lucide-react";
-import ReactMarkdown from "react-markdown"; // ✅ render bot replies
+import ReactMarkdown from "react-markdown"; 
 import logo from "./assets/bioseeklogo.png";
+import config from "./config";
 import './App.css';
 
 export default function App() {
@@ -29,8 +30,8 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [results]);
 
-  // ✅ API URL with fallback
-  const API_URL = "http://127.0.0.1:8000";
+  // ✅ API URL with automatic environment detection
+  const API_URL = config.getApiUrl();
 
 
   // ---------------- SEARCH ----------------
