@@ -1,10 +1,10 @@
 // API Configuration
 const config = {
   // Development API URL (localhost)
-  development: "https://bioseekai-backend-api-dpc9cwfxhxa5dtd7.eastasia-01.azurewebsites.net",
+  development: "https://bioseek-ai-backend-api-dud2f6cbbvbuemg2.southindia-01.azurewebsites.net",
   
   // Production API URL (Azure) - Hardcoded for your deployed frontend
-  production: "https://bioseekai-backend-api-dpc9cwfxhxa5dtd7.eastasia-01.azurewebsites.net",
+  production: "https://bioseek-ai-backend-api-dud2f6cbbvbuemg2.southindia-01.azurewebsites.net",
   
   // Get the appropriate URL based on environment
   getApiUrl: () => {
@@ -18,4 +18,5 @@ const config = {
 };
 
 export default config;
+
 
