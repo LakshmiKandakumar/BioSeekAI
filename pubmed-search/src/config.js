@@ -1,10 +1,10 @@
 // API Configuration
 const config = {
   // Development API URL (localhost)
-  development: "http://127.0.0.1:8000",
+  development: "https://bioseekai-backend-api-dpc9cwfxhxa5dtd7.eastasia-01.azurewebsites.net",
   
   // Production API URL (Azure) - Hardcoded for your deployed frontend
-  production: "https://bioseekai-backend.azurewebsites.net",
+  production: "https://bioseekai-backend-api-dpc9cwfxhxa5dtd7.eastasia-01.azurewebsites.net",
   
   // Get the appropriate URL based on environment
   getApiUrl: () => {
@@ -18,3 +18,4 @@ const config = {
 };
 
 export default config;
+
