@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.text-card {
+  max-width: 800px;
+  width: 90%; /* ensures responsiveness */
+  margin: 20px auto; /* centers the card */
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(20, 20, 40, 0.85);
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(110, 194, 211, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  font-family: 'Inter', sans-serif; /* professional font */
+  overflow-wrap: anywhere; /* wrap long text to avoid horizontal scroll */
+}
+
+.text-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7), 0 0 50px rgba(121, 210, 230, 0.5);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #00ffff; /* neon cyan */
+  font-weight: 600;
+  word-wrap: break-word;
+}
+
+.card-heading {
+  color: #00ffff; /* neon cyan for headings */
+  font-weight: 600;
+}
+
+.card-authors,
+.card-year,
+.card-abstract,
+.card-link {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-weight: 400;
+  word-wrap: break-word; /* prevent overflow */
+}
+
+.card-link a {
+  color: #ff80ff;
+  text-decoration: underline;
+  word-break: break-word; /* wrap long URLs */
+}
+
+@media (max-width: 768px) {
+  .chat-wrapper {
+    width: 90vw !important;
+    right: 5vw !important;
+    left: 5vw !important;
+    max-height: 70vh;
+  }
+  
+  .app-container {
+    width: 95%;
+  }
+}

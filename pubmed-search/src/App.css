@@ -1,3 +1,4 @@
+/* App.css - Main application styles */
 .app-container {
   width: 80%;
   margin: auto;
@@ -42,3 +43,33 @@
 .article-card h3 {
   margin: 0 0 10px 0;
 }
+
+/* Chat icon glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 15px #00B8A9, 0 0 30px #00B8A9, 0 0 45px #00B8A9;
+  }
+  100% {
+    box-shadow: 0 0 20px #00B8A9, 0 0 35px #00B8A9, 0 0 50px #00B8A9;
+  }
+}
+
+.chat-icon {
+  animation: glow 1.5s infinite alternate;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chat-wrapper {
+    width: 90vw !important;
+    right: 5vw !important;
+    left: 5vw !important;
+    max-height: 70vh;
+  }
+  
+  .app-container {
+    width: 95%;
+  }
+}
+
+/* Prism.css - Prism component styles */
